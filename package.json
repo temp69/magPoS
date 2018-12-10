@@ -1,0 +1,11 @@
+{
+  "name": "magpos",
+  "version": "1.0.0",
+  "description": "magnet stake explorer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TEmp",
+  "license": "ISC"
+}
