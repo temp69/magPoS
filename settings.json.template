@@ -1,0 +1,28 @@
+/*
+SETTINGS
+*/
+{
+    //MISC
+    "title": "MAGNET POS/MN EXPLORER",
+    //PORT
+    "port": 8080,
+    //JAVA WEB TOKEN PRIVATE KEY
+    "jwt_pkey": "a_unique_key",
+    //DATABASE SETTINGS (mongodb)
+    "dbsettings": {
+        "user": "mongouser",
+        "password": "mongopass",
+        "database": "magExplorer",
+        "address": "localhost",
+        "port": 27017
+    },
+    // MAGNET WALLET RPC INFO (magnet command line interface)
+    "magwallet": {
+        "cli": "mag-cli",
+        "path": "/usr/local/bin/",
+        "host": "localhost",
+        "port": 17103,
+        "user": "rpcmaguser",
+        "pass": "rpcpass"
+    }
+}
