@@ -4,12 +4,22 @@
   "description": "magnet stake explorer",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "author": "TEmp",
   "license": "ISC",
   "dependencies": {
     "bitcoind-rpc": "^0.7.2",
-    "jsonminify": "^0.4.1"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2",
+    "jsonminify": "^0.4.1",
+    "mongoose": "^5.4.0",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }

@@ -171,7 +171,7 @@ getCurrentheight(cb =>{
 //// SPAWN concurrency amount of task parallel
 //const blockArray = [100, 5001, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010];
 const range = (N) => Array.from({ length: N }, (v, k) => k + 1);
-const blockArray = range(100);
+const blockArray = range(56479);
 let concurrency = 10, running = 0, completed = 0, index = 0;
 function next() {
     while (running < concurrency && index < blockArray.length) {
@@ -214,7 +214,7 @@ function next() {
                             info += ' MN: ' + voutInfo[2].scriptPubKey.addresses;
                         }
                     }
-                    console.log(`Block ${block}: tx's[${tx.length}] -> ${info} | ${completed}`);
+                    console.log(`Block ${block}: tx's[${tx.length}] -> ${info}`);
                 })
             })
         });
